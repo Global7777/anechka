@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>для Анечки ✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(145deg, #fbe9f0 0%, #fad9e4 100%);
+            font-family: 'Caveat', cursive;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 450px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgba(255, 250, 250, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 70px 70px 70px 25px;
+            padding: 40px 30px 50px;
+            box-shadow: 0 25px 40px rgba(245, 155, 175, 0.25), 0 0 0 2px rgba(255, 255, 255, 0.8);
+            text-align: center;
+            border: 1px solid rgba(255, 220, 230, 0.6);
+            animation: appear 0.9s ease-out;
+        }
+
+        @keyframes appear {
+            0% { opacity: 0; transform: scale(0.92) translateY(25px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        /* НОВАЯ Hello Kitty по вашей ссылке */
+        .main-kitty {
+            margin: 5px 0 25px 0;
+            animation: kittyFloat 5s ease-in-out infinite;
+        }
+
+        .main-kitty img {
+            max-width: 220px;
+            width: 100%;
+            height: auto;
+            border-radius: 30px;
+            filter: drop-shadow(0 15px 15px rgba(255, 150, 180, 0.4));
+            transition: transform 0.3s ease;
+        }
+
+        .main-kitty img:hover {
+            transform: scale(1.02);
+        }
+
+        @keyframes kittyFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .handwriting {
+            font-family: 'Caveat', cursive;
+            line-height: 1.2;
+        }
+
+        .title {
+            font-size: 4.8rem;
+            font-weight: 600;
+            color: #bc5a72;
+            text-shadow: 3px 3px 0 white, 5px 5px 0 rgba(255, 180, 200, 0.4);
+            margin: 20px 0 5px;
+            letter-spacing: 1px;
+            transform: rotate(-0.8deg);
+        }
+
+        .subtitle {
+            font-size: 4rem;
+            font-weight: 500;
+            color: #ce6f89;
+            text-shadow: 2px 2px 0 white, 4px 4px 0 rgba(255, 190, 210, 0.5);
+            margin-bottom: 30px;
+            transform: rotate(0.6deg);
+            border-bottom: 2px dashed rgba(255, 160, 180, 0.4);
+            padding-bottom: 20px;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .divider-line {
+            height: 2px;
+            width: 60px;
+            background: linear-gradient(90deg, transparent, #fbaac3, transparent);
+        }
+
+        .divider-heart {
+            color: #fbaac3;
+            font-size: 1.8rem;
+            opacity: 0.8;
+        }
+
+        /* Текст изменён на "самая красивая" */
+        .message {
+            background: rgba(255, 240, 245, 0.6);
+            border-radius: 60px 60px 60px 20px;
+            padding: 25px 20px;
+            margin: 25px 0;
+            border: 2px dashed white;
+            font-size: 2.5rem;
+            color: #a6576d;
+            line-height: 1.3;
+            box-shadow: inset 0 0 20px rgba(255, 220, 230, 0.5);
+        }
+
+        .button {
+            background: white;
+            border: 3px solid #ffb6c1;
+            padding: 16px 30px;
+            border-radius: 50px;
+            font-family: 'Caveat', cursive;
+            font-size: 2.2rem;
+            color: #b85c74;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            margin: 20px 0 15px;
+            box-shadow: 0 7px 0 #ffb6c1;
+        }
+
+        .button:active {
+            transform: translateY(5px);
+            box-shadow: 0 2px 0 #ffb6c1;
+        }
+
+        .footer {
+            font-size: 2rem;
+            color: #ce7a91;
+            margin-top: 25px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 400px) {
+            .title { font-size: 4rem; }
+            .subtitle { font-size: 3.2rem; }
+            .message { font-size: 2rem; }
+            .main-kitty img { max-width: 180px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+
+            <!-- НОВАЯ Hello Kitty (по вашей ссылке) -->
+            <div class="main-kitty">
+                <img src="https://i.pinimg.com/originals/1c/c0/26/1cc02637984b4e5cc590e94c1a9f1a6f.webp"
+                     alt="Милая Hello Kitty"
+                     onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22200%22%20height%3D%22200%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2245%22%20fill%3D%22%23ffe0f0%22%20stroke%3D%22%23ffa5b9%22%20stroke-width%3D%223%22%2F%3E%3Ccircle%20cx%3D%2235%22%20cy%3D%2240%22%20r%3D%225%22%20fill%3D%22%23333%22%2F%3E%3Ccircle%20cx%3D%2265%22%20cy%3D%2240%22%20r%3D%225%22%20fill%3D%22%23333%22%2F%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2260%22%20r%3D%225%22%20fill%3D%22%23ff99bb%22%2F%3E%3C%2Fsvg%3E';">
+            </div>
+
+            <div class="handwriting title">
+                Анечка
+            </div>
+
+            <div class="handwriting subtitle">
+                ты котенок
+            </div>
+
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-heart">🩷</span>
+                <span class="divider-line"></span>
+            </div>
+
+            <!-- ТЕКСТ ИЗМЕНЁН на "самая красивая" -->
+            <div class="message">
+                〜 самая красивая 〜
+            </div>
+
+            <button class="button" onclick="showHug()">
+                〜 обнимашки 〜
+            </button>
+
+            <div class="footer">
+                с нежностью
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showHug() {
+            const btn = document.querySelector('.button');
+            btn.textContent = '🩷  люблю  🩷';
+            btn.style.background = '#ffb6c1';
+            btn.style.color = 'white';
+            btn.style.borderColor = '#ff9eb5';
+
+            for (let i = 0; i < 10; i++) {
+                setTimeout(() => {
+                    let heart = document.createElement('div');
+                    heart.style.position = 'fixed';
+                    heart.style.left = Math.random() * 100 + '%';
+                    heart.style.bottom = '0';
+                    heart.style.color = ['#ff9eb5', '#ffb6c1', '#ffc0cb'][Math.floor(Math.random() * 3)];
+                    heart.style.fontSize = (1.2 + Math.random() * 2) + 'rem';
+                    heart.style.zIndex = '9999';
+                    heart.style.pointerEvents = 'none';
+                    heart.style.animation = 'floatUp 2.5s ease-out forwards';
+                    heart.textContent = ['🩷', '🌸', '✨', '🫧'][Math.floor(Math.random() * 4)];
+                    document.body.appendChild(heart);
+                    setTimeout(() => heart.remove(), 2500);
+                }, i * 100);
+            }
+
+            setTimeout(() => {
+                btn.textContent = '〜 обнимашки 〜';
+                btn.style.background = 'white';
+                btn.style.color = '#b85c74';
+                btn.style.borderColor = '#ffb6c1';
+            }, 1500);
+        }
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes floatUp {
+                0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+                100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
